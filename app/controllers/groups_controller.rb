@@ -12,6 +12,10 @@ class GroupsController < ApplicationController
     end
   end
 
+  def index
+  end
+  
+
   private
 
   def group_params

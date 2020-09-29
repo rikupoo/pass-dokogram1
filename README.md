@@ -35,7 +35,7 @@ Things you may want to cover:
 
 ### Association
 
-- has_many :rooms
+- has_many :groups
 - has_many :messages
 
 
@@ -59,5 +59,5 @@ Things you may want to cover:
 
 ### Association
 
-- belongs_to :room
+- belongs_to :group
 - belongs_to :user

@@ -14,7 +14,7 @@
 <% current_user.groups.each do |group| %>
     <div class="group">
       <div class="group-name">
-        <a href="#"><%= group.name %></a>
+     <%=link_to group.name,group_messages_path(group) %>
       </div>
     </div>
   <% end %>
