@@ -21,11 +21,11 @@
   text-decoration: none;
 }
 
-.create-room {
+.create-group {
   font-size: 10px;
 }
 
-.create-room a {
+.create-group a {
   border: 1px solid lightblue;
   padding: 14px;
   color: deepskyblue;
