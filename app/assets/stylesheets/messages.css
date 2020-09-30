@@ -2,22 +2,22 @@
   display: flex;
 }
 .side {
-  background-color: #253141;
+  border: 1px solid deepskyblue;
   width: 300px;
   height: 100vh;
 }
 .side-bar-header {
   height: 100px;
   padding: 0 20px;
-  background-color: #253141;
+  background:linear-gradient(180deg,white,#ffffcc);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .header-name a{
-  font-size: 16px;
-  color: #FAFAFA;
+  font-size: 30px;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -26,13 +26,13 @@
 }
 
 .create-group a {
-  border: 1px solid lightblue;
-  padding: 14px;
+  border: 1px solid deepskyblue;
+  padding: 20px;
   color: deepskyblue;
   text-decoration: none;
 }
 .groups {
-  background-color: #2F3E51;
+  background:linear-gradient(180deg,#ffffcc,#ffff00);
   height: calc(100vh - 100px);
   padding: 0 20px;
   overflow: scroll;
@@ -43,7 +43,8 @@
 
 .group-name a {
   text-decoration: none;
-  color: white;
+  color:#000000;
+  font-size: 25px;
 }
 
 .main {
@@ -53,14 +54,38 @@
 .chat-header {
   height: 100px;
   padding: 0 40px;
+  background:linear-gradient(180deg,white,#ffffcc);
+  display: flex;
+  justify-content: space-between;
 }
+.chat-name{
+  margin-top: 36px;
+  font-size: 30px;
+}
+
+.chat-end{
+  margin-top: 36px;
+}
+
 .messages {
-  background-color: #FAFAFA;
+  background:linear-gradient(180deg,#ffffcc,#ffff22);
   height: calc(100vh - 100px - 90px);
   padding: 46px 40px 0;
+  overflow: scroll;
 }
+
+.message{
+  display:flex;
+  justify-content: space-between;
+}
+
+.message-content{
+color: #000000;
+white-space: pre-wrap;
+}
+
 .form {
-  background-color: #DDDDDD;
+  background:linear-gradient(180deg,#ffff22,#ffff00);
   height: 90px;
   padding: 20px 40px;
   display: flex;
@@ -87,3 +112,4 @@
   margin-left: 15px;
   padding: 0 20px;
 }
+

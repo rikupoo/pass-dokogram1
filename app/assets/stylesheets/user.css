@@ -1,10 +1,10 @@
+
 .account-page .account-page__inner {
-  width: 980px;
-  margin: 60px auto;
+  width: 100vw;
+  height: 100vh;
   padding: 60px;
-  background-color: #fff;
-  border: 1px solid #ddd;
   border-radius: 5px;
+  background: linear-gradient(white,#ffabce);
 }
 .account-page .account-page__inner .account-page__inner--left, .account-page .account-page__inner .account-page__inner--right {
   float: left;
@@ -15,28 +15,30 @@
   content: "";
   display: block;
 }
+
 .account-page .account-page__header h2 {
   margin-bottom: 10px;
   letter-spacing: 3px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 200;
+  color: #ff00ff;
 }
 .account-page .account-page__header h2:after {
   content: "";
   display: block;
-  width: 60px;
+  width: 350px;
   margin-top: 5px;
   border-bottom: 1px solid #38aef0;
 }
-.account-page .account-page__header h5 {
-  margin-bottom: 20px;
-  font-size: 14px;
-  font-weight: 200;
+.new_account{
+color:#0000bb ;
+font-size: 20px;
 }
+
 .account-page .account-page__header .btn {
   margin-top: 20px;
   color: #fff;
-  background-color: #ccc;
+  background-color: deepskyblue;
   font-size: 14px;
 }
 .account-page .field {
@@ -70,7 +72,7 @@
   float: left;
   margin-top: 20px;
   color: #fff;
-  background-color: #38aef0;
+  background-color: deepskyblue;
 }
 .account-page .field-label .field_with_errors {
   display: inline-block;

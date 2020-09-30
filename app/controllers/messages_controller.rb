@@ -17,6 +17,13 @@ class MessagesController < ApplicationController
     end
   end
 
+  def destroy
+    @group = Group.find(params[:group_id])
+    @messages = @group.messages.find(params[:id])
+    @messages.destroy
+    redirect_to  root_path
+  end
+
   private
 
   def message_params

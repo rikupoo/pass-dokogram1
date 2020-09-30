@@ -12,16 +12,25 @@
 </div>
 
   <div class="messages">
-  <%@messages.each do |messages|%>
-    <div class="message-content">
-      <%= messages.content%>
-    </div>
+    <%@messages.each do |message|%>
+    <div class="message">
+      <div class="message-content">
+       <%= message.content%>
+      </div>
+        <div class="more">
+          <ul class="more_list">
+            <li>
+              <%= link_to '削除',group_message_path(@group.id,message),  method: :delete%>
+            </li>
+          </ul>
+        </div>
+        </div>
     <%end%>
   </div>
 
 <%= form_with model: [@group, @message], html: {class: "form"}, local: true do |f| %>
   <div class="form-input">
-    <%= f.text_area :content, class: 'form-message', placeholder: 'type a message' %>
+    <%= f.text_area :content, class: 'form-message' %>
   </div>
   <%= f.submit '送信', class: 'form-submit' %>
 <% end %>

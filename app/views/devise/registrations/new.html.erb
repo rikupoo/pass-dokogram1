@@ -1,15 +1,20 @@
 <div class='account-page' id='account-page'>
   <div class='account-page__inner clearfix'>
     <div class='account-page__inner--left account-page__header'>
-      <h2>Create Account</h2>
-      <h5>新規アカウントの作成</h5>
+      <h2>パスワード管理アプリ</h2>
+      パスワードを管理するアプリです。
+      　　　　　　　　　　　　　　　　　　　　　　　　　シンプルで見やすくパスワードを覚える必要もなくなります。
+      
     </div>
     <div class='account-page__inner--right user-form'>
+    <div class="new_account">
+    <h5>新規アカウント作成<h5>
+    </div>
       <%= form_with model: @user, url: user_registration_path, local: true do |f|%>
         <%= devise_error_messages!%>
         <div class='field'>
           <div class='field-label'>
-            <%= f.label :name%>
+            <%= f.label :名前%>
           </div>
           <div class='field-input'>
             <%= f.text_field :name, autofocus: true%>
@@ -17,7 +22,7 @@
         </div>
         <div class='field'>
           <div class='field-label'>
-            <%= f.label :email%>
+            <%= f.label :メールアドレス %>
           </div>
           <div class='field-input'>
             <%= f.email_field :email%>
@@ -25,7 +30,7 @@
         </div>
         <div class='field'>
           <div class='field-label'>
-            <%= f.label :password%>
+            <%= f.label :パスワード%>
             <i>(英数字8文字以上)</i>
           </div>
           <div class='field-input'>
@@ -34,7 +39,7 @@
         </div>
         <div class='field'>
           <div class='field-label'>
-            <%= f.label :password_confirmation%>
+            <%= f.label :確認用パスワード%>
           </div>
           <div class='field-input'>
             <%= f.password_field :password_confirmation, autocomplete: "off"%>
