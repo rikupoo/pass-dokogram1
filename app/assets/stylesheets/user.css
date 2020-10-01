@@ -23,6 +23,12 @@
   font-weight: 200;
   color: #ff00ff;
 }
+
+.devise_gif{
+  margin-top: 100px;
+  width: 40px;
+}
+
 .account-page .account-page__header h2:after {
   content: "";
   display: block;

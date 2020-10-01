@@ -19,9 +19,9 @@ class MessagesController < ApplicationController
 
   def destroy
     @group = Group.find(params[:group_id])
-    @messages = @group.messages.find(params[:id])
-    @messages.destroy
-    redirect_to  root_path
+    @message = @group.messages.find(params[:id])
+    @message.destroy
+    redirect_to  group_messages_path
   end
 
   private

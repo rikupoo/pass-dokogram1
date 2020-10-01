@@ -118,3 +118,8 @@ select {
   display: contents;
 }
 
+.main_space{
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
